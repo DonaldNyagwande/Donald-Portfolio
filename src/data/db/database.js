@@ -7,23 +7,23 @@ const database = {
       "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
     age: 30,
     phone: "641-819-2733",
-    nationality: "Zimbabwe",
+    nationality: "Zimbabwean",
     language: "English, Shona",
-    email: "",
+    email: "donaldnyagwande@gmail.com",
     address: "21868 Farmington Road ,Farmington ,48336, MI",
-    freelanceStatus: "Available",
+    freelanceStatus: "Unavailable",
     socialLinks: {
-      facebook: "https://facebook.com",
+      facebook: "https://www.facebook.com/dee.bronx.397/",
       twitter: "https://twitter.com",
       pinterest: "",
       behance: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/donaldnyagwande/",
       dribbble: "",
-      github: "https://github.com",
+      github: "https://github.com/DonaldNyagwande",
     },
-    brandImage: "/images/brand-image.jpg",
-    aboutImage: "/images/about-image.jpg",
-    aboutImageLg: "/images/about-image-lg.jpg",
+    brandImage: "/images/donald-profile-phot-old.jpg",
+    aboutImage: "/images/donald-profile-photo-recent.png",
+    aboutImageLg: "/images/donald-profile-photo-recent.png",
     cvfile: "/files/empty.pdf",
   },
   services: [
@@ -76,11 +76,39 @@ const database = {
   ],
   skills: [
     {
-      title: "HTML5",
+      title: "Kotlin",
+      value: 80,
+    },
+    {
+      title: "Java",
       value: 95,
     },
     {
-      title: "CSS3",
+      title: "Mobile Development",
+      value: 95,
+    },
+    {
+      title: "",
+      value: 95,
+    },
+    {
+      title: "Kafka",
+      value: 95,
+    },
+    {
+      title: "Kafka",
+      value: 95,
+    },
+    {
+      title: "AWS",
+      value: 95,
+    },
+    {
+      title: "SpringBoot",
+      value: 95,
+    },
+    {
+      title: "Docker",
       value: 90,
     },
     {
@@ -96,8 +124,36 @@ const database = {
       value: 80,
     },
     {
-      title: "Photoshop",
-      value: 65,
+      title: "Kafka",
+      value: 95,
+    },
+    {
+      title: "Jira",
+      value: 95,
+    },
+    {
+      title: "Kubernetes",
+      value: 95,
+    },
+    {
+      title: "JPA",
+      value: 95,
+    },
+    {
+      title: "PostgreSQL",
+      value: 95,
+    },
+    {
+      title: "MySQL",
+      value: 95,
+    },
+    {
+      title: "MsSQL",
+      value: 95,
+    },
+    {
+      title: "Kafka",
+      value: 95,
     },
   ],
   portfolios: [
