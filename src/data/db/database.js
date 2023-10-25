@@ -4,13 +4,14 @@ const database = {
   information: {
     name: "Donald Nyagwande",
     aboutContent:
-      "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+      "\n" +
+        "Experienced Java full-stack developer and Android programmer with over 5 years of successful delivery in fast-paced, secure settings. Proficient in Java, Kotlin, Gradle, XML, Spring Boot, JavaScript, HTML, CSS, and databases like MySQL, PostgreSQL, and MongoDB. Adept at working collaboratively with diverse cross-functional teams.",
     age: 30,
     phone: "641-819-2733",
     nationality: "Zimbabwean",
     language: "English, Shona",
     email: "donaldnyagwande@gmail.com",
-    address: "21868 Farmington Road ,Farmington ,48336, MI",
+    address: "21868 Farmington Road"+"\n"+ ",Farmington ,48336, MI",
     freelanceStatus: "Unavailable",
     socialLinks: {
       facebook: "https://www.facebook.com/dee.bronx.397/",
@@ -85,31 +86,31 @@ const database = {
     },
     {
       title: "Mobile Development",
+      value: 80,
+    },
+    {
+      title: "Agile Development",
       value: 95,
     },
     {
-      title: "",
-      value: 95,
+      title: "MongoDB",
+      value: 80,
     },
     {
-      title: "Kafka",
-      value: 95,
-    },
-    {
-      title: "Kafka",
-      value: 95,
+      title: "Spring Security",
+      value: 70,
     },
     {
       title: "AWS",
-      value: 95,
+      value: 75,
     },
     {
       title: "SpringBoot",
-      value: 95,
+      value: 90,
     },
     {
       title: "Docker",
-      value: 90,
+      value: 70,
     },
     {
       title: "Javascript",
@@ -117,14 +118,14 @@ const database = {
     },
     {
       title: "jQuery",
-      value: 85,
+      value: 60,
     },
     {
       title: "ReactJS",
       value: 80,
     },
     {
-      title: "Kafka",
+      title: "Android development",
       value: 95,
     },
     {
@@ -137,23 +138,23 @@ const database = {
     },
     {
       title: "JPA",
-      value: 95,
+      value: 85,
     },
     {
       title: "PostgreSQL",
-      value: 95,
+      value: 80,
     },
     {
       title: "MySQL",
-      value: 95,
+      value: 75,
     },
     {
       title: "MsSQL",
-      value: 95,
+      value: 70,
     },
     {
-      title: "Kafka",
-      value: 95,
+      title: "Hibernate",
+      value: 80,
     },
   ],
   portfolios: [
@@ -343,53 +344,55 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
+        year: "2022 - Present",
+        position:
+          "Student-Pursuing Master In Science via distance education(completed on-campus courses) ",
+        company:
+          "Maharishi International University(currently looking for placement)",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Completed on campus courses which include Fundamental Programming Practices, Modern Programming Practices, Web Application Programming, Mobile Device Programming, Web Application Architecture, Enterprise Architecture, Software Architecture, DBMS, Cloud Computing, Algorithms. Academic Projects : MIU Course Registration: Created scalable RESTful API for student registration system, enabling students to select courses based on available seats, course prerequisite, and priority in each academic block. Implemented RabbitMQ, and Kafka for messaging and notifications. Used frameworks such as Spring, Hibernate, Spring Security, Postgres and Docker for database, Git for submitting to branch and Java as programming language.•	Technologies Used: RabbitMQ, Kafka, Spring, Hibernate, Spring Security, Postgres, Docker, Git, Java  ",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
+        year: "2018 - 2022",
+        position: "Junior Software Developer",
+        company: "ITA Solutions",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "• Developed a full stack website with the Microservices architecture. •\tDemonstrated expertise in utilizing J2EE technologies, such as Spring, Hibernate, XML, JUnit, Servlets, Struts, and Spring Boot, to create robust and scalable backend systems for web applications.•\tUsed Docker for containerization to encapsulate microservices with their dependencies and used Kubernetes for container orchestration to enable deployment, scaling, and service discovery. •\tImplemented a Config Server as a central repository for configuration data and register all the microservices to the server, so they can retrieve their configuration file/s. •\tProficiently integrated various web services, including SOAP and REST, to facilitate seamless communication and data exchange between applications.•\tUsed Kafka for asynchronous communication between microservices using topics and events.•\tImplemented the API gateway as a single point of entry for all client requests and integrated it with the Auth server to authenticate and authorize users using JWT tokens.• Utilized React and Electrode to build modern and responsive user interfaces, enhancing the user experience and interactivity of web applications. •\tTechnologies Used: Java, Spring Boot, Hibernate, JPA, Config Server, Jira and Confluence, Mockito, Microservices, Kibana, ElasticSearch, Logstash, GIT, Zipkin, Docker and Kubernetes, Kafka, API Gateway, React, Axios. PostgreSQL",
       },
       {
         id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
+        year: "2016 - 2017",
+        position: "IT Intern",
+        company: "Hamilton Insurance",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
-      },
+          "" },
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
+        year: "2022 - Present",
         graduation: "Master of Science",
-        university: "Abc University",
+        university: "Maharishi International University",
+        status: "Ongoing",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Master of Science In Computer Science with Specialization in Software Development. Key Courses: Fundamental Programming Practices, Modern Programming Practices, Web Application Programming, Mobile Device Programming, Web Application Architecture, Enterprise Architecture, Software Architecture, DBMS, Cloud Computing, Algorithms. These courses collectively equipped me with the knowledge and skills required to excel in the dynamic and ever-evolving field of computer science. ",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
+        year: "2014 - 2018",
+        graduation: "Bachelor of Science in Computer Science",
+        university: "National University of Science and Technology",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Bachelors of Science in Computer Science. Key Courses : Software Engineering Concepts,Database Concepts, Programming and Program Design, Structured Programming, Web Designing,AI, Computer Security, OOP Programming, Computer Networks, Advanced Programming. My Bachelor of Science in Computer Science degree provided me with a solid foundation in computer science principles, programming languages, and software development methodologies. It equipped me with the skills to analyze complex problems, design efficient solutions, and create innovative software applications. The program fostered a deep understanding of algorithms, data structures, and database management, enabling me to tackle diverse technological challenges.",
       },
       {
         id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
+        year: "2012 - 2013",
+        graduation: "Advanced Level Education",
+        university: "St Mary's Magdalene",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          "Key Subjects:Mathematics ,Computer Science. Key Contributions: 1: Problem-Solving: Advanced math and computer science courses teach you how to approach complex problems methodically, analyze them, and develop effective solutions. This skill is invaluable for tackling software development challenges. 2: Analytical Thinking: The ability to dissect and understand intricate concepts in mathematics and computer science enables you to break down complex issues into manageable components, a critical skill in coding and system design. 3: Mathematical Modeling: Mathematics courses often involve creating mathematical models to represent real-world situations. This skill can be applied to designing algorithms and making data-driven decisions in computer science. 4: Logical Reasoning: Computer science require logical thinking and reasoning, which is essential for programming and software development. ",
       },
     ],
   },
@@ -533,9 +536,9 @@ const database = {
     },
   ],
   contactInfo: {
-    phoneNumbers: ["+012-3456-7891", "+012-3456-7892"],
-    emailAddress: ["admin.sitename@example.com", "info.sitename@example.com"],
-    address: "121 King Street, Melbourne, Victoria 3000, Australia",
+    phoneNumbers: ["+1 641 819 2733"],
+    emailAddress: ["donaldnyagwande@gmail.com", "nyagwandedonald@gmail.com"],
+    address: "21868 Farmington Road, Farmington, Michigan, 48336",
   },
 };
 
