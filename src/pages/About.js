@@ -16,6 +16,7 @@ function About() {
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
+  const [cvFile ,setCvFile]=useState("https://d2c21ixyxyigeh.cloudfront.net")
 
   const sliderSettings = {
     dots: false,
@@ -53,6 +54,7 @@ function About() {
     axios.get("/api/reviews").then((response) => {
       setReviews(response.data);
     });
+    setCvFile("https://d2c21ixyxyigeh.cloudfront.net/donald-nyagwande-resume.pdf")
   }, []);
 
   return (
@@ -142,7 +144,7 @@ function About() {
                       </li>
                     )}
                   </ul>
-                  <a href={information.cvfile} className="mi-button">
+                  <a href={cvFile} className="mi-button">
                     Download CV
                   </a>
                 </div>
