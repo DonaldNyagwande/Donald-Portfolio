@@ -16,7 +16,8 @@ function About() {
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
-  const [cvFile ,setCvFile]=useState("https://d2c21ixyxyigeh.cloudfront.net")
+  const cvFile="https://d2c21ixyxyigeh.cloudfront.net/donald-nyagwande-resume.pdf";
+  //const [cvFile ,setCvFile]=useState("https://d2c21ixyxyigeh.cloudfront.net")
 
   const sliderSettings = {
     dots: false,
@@ -44,7 +45,17 @@ function About() {
     setToggler(!toggler);
   };
 
+
   useEffect(() => {
+    axios.get(cvFile,{responseType:'arraybuffer'})
+        .then((response)=>{
+          const content =new Blob([response.data]);
+          const url=window.URL.createObjectURL(content);
+          window.open(url);
+        })
+        .catch((error)=>{
+          console.error("Error fetching the file: ",error);
+        });
     axios.get("/api/information").then((response) => {
       setInformation(response.data);
     });
@@ -54,8 +65,8 @@ function About() {
     axios.get("/api/reviews").then((response) => {
       setReviews(response.data);
     });
-    setCvFile("https://d2c21ixyxyigeh.cloudfront.net/donald-nyagwande-resume.pdf")
-  }, []);
+    //setCvFile("https://d2c21ixyxyigeh.cloudfront.net/donald-nyagwande-resume.pdf")
+  }, [cvFile]);
 
   return (
     <Layout>
