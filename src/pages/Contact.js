@@ -21,21 +21,33 @@ function Contact() {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if (!formdata.name) {
+    if (!formdata.name||!formdata.email||!formdata.subject||!formdata.message) {
       setError(true);
-      setMessage("Name is required");
-    } else if (!formdata.email) {
-      setError(true);
-      setMessage("Email is required");
-    } else if (!formdata.subject) {
-      setError(true);
-      setMessage("Subject is required");
-    } else if (!formdata.message) {
-      setError(true);
-      setMessage("Message is required");
-    } else {
-      setError(false);
-      setMessage("You message has been sent!!!");
+      setMessage("All fields are required");
+    }
+      else {
+
+      const postData={
+        name:formdata.name,
+        email:formdata.email,
+        subject:formdata.subject,
+        message:formdata.message
+        };
+      axios.post("arn:aws:lambda:us-east-1:131122843785:function:myPortfolioLambda",postData)
+          .then((response)=>{
+            setError(false);
+            setMessage("Your Message has been sent!");
+            setFormdata({
+              name:"",
+              email: "",
+              subject: "",
+              message: ""
+            });
+          })
+          .catch((error)=>{
+            setError(true);
+            setMessage("Failed to send the message. Please try again later.");
+          });
 
     }
   };
